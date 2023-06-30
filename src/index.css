@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: #001F27;
+    color: #F4F4F4;
+    font-family: 'Poppins', sans-serif;
+}
+.menu li a:hover{
+    border-bottom: 1px solid #9D7D28;
+    color: #9D7D28;
+    border-radius: 0%;
+    font-weight: bold;
+
+}
+.resume-btn{
+    border: 1px solid #9D7D28;
+    border-radius: 5px;
+    padding: 2px 15px;
+}
