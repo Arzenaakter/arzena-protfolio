@@ -8,7 +8,7 @@ const Banner = () => {
       <div className=" w-full mx-auto   ">
         <div className="flex justify-between mx-10">
           <motion.div
-            className="mt-28 w-[30%] h-72 relative border-gradient"
+            className="mt-28 w-[30%] h-72 relative z-10  bg-opacity-30 bg-black rounded-lg"
             initial={{ opacity: 0 }}
             whileHover={{
               scale: 1.2,
@@ -56,7 +56,7 @@ const Banner = () => {
               technology stack, enhancing proficiency in front-end, back-end,
               database management, and API integration.{" "}
             </p>
-            <a href='/public/Resume-Arzena.pdf' className="border-gradient p-2 w-52 flex gap-3">Download Resume <FaDownload/></a>
+            <a href='/public/Resume-Arzena.pdf' className="border-gradient  p-2 w-52 flex gap-3 btn-hover">Download Resume <FaDownload/></a>
           </motion.div>
         </div>
       </div>

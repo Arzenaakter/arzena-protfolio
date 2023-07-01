@@ -2,8 +2,8 @@
 
 const Footer = () => {
     return (
-        <div>
-            footer
+        <div className="text-center py-10">
+           <p>Copyright © 2023 - All right reserved by Arzena Akter</p>
         </div>
     );
 };
