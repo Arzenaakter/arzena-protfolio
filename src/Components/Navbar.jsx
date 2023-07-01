@@ -1,4 +1,4 @@
-// import { motion } from 'framer-motion'
+
 
 import { Link } from "react-router-dom";
 
@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className=" navbar fixed container mx-auto z-10  bg-opacity-30 bg-black ">
+      <header className=" navbar fixed container rounded-full px-5 mx-auto z-10  bg-opacity-30 bg-black ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -49,16 +49,19 @@ const Navbar = () => {
               {menuLink}
             </ul>
           </div>
-          <Link to="/" className=" normal-case text-xl">
-            Arzena Akter
+          <Link to="/" >
+          <span className="  text-4xl logo text-gradient font-bold"
+           
+          
+          >  Arzena Akter</span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 font-thin">{menuLink}</ul>
         </div>
-        <div className="navbar-end">
+        {/* <div className="navbar-end">
           <a className="resume-btn">Resume</a>
-        </div>
+        </div> */}
       </header>
     </>
   );
