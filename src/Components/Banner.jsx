@@ -60,7 +60,7 @@ const Banner = () => {
               database management, and API integration.{" "}
             </p>
             <a
-              href="/public/Resume-Arzena.pdf"
+              href="./public/Resume-Arzena.pdf"
               className="border-gradient  p-2 w-52 flex gap-3 btn-hover">
               Download Resume <FaDownload />
             </a>
