@@ -1,5 +1,5 @@
 import { AiOutlineGithub } from "react-icons/ai";
-import { Link } from "react-router-dom";
+// import { a } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const Projects = () => {
@@ -28,7 +28,7 @@ const Projects = () => {
               <img
                 src="https://i.ibb.co/0cPt7xX/ass-12.png"
                 alt=""
-                className="w-full object-cover object-top"
+                className="w-full object-cover object-hrefp"
               />
             </div>
           </div>
@@ -43,21 +43,21 @@ const Projects = () => {
                 <span className="text-gradient text-lg">Features: </span> <br />{" "}
                 <span className="text-[12px] font-thin space-y-2">
                   <li>
-                    The website about summer camp school allows students to
+                    The website about summer camp school allows students href
                     enroll and learn specific extra-curricular activities.
                   </li>
                   <li>
                     Conditional-based dashboard with different roles: Admin role
                     (admin email: arzena@gmail.com and password: 123@aA),
-                    Instructor role, Student role.
+                    Instruchrefr role, Student role.
                   </li>
                   <li>
                     Admin role functionalities: Manage all users, Manage all
-                    classes added by instructors Instructor role
+                    classes added by instruchrefrs Instruchrefr role
                     functionalities: Add classes, View their added classes and
                     also Student role functionalities: Select a class, Delete
-                    selected class, Enroll in a class, Proceed to payment,
-                    Complete the checkout process, Access payment history.
+                    selected class, Enroll in a class, Proceed href payment,
+                    Complete the checkout process, Access payment hishrefry.
                   </li>
                 </span>
               </p>
@@ -72,28 +72,25 @@ const Projects = () => {
               </p>
             </div>
             <div className="flex  gap-4 items-center text-xl">
-              <Link
-                to="https://summer-camp-44ba3.web.app/"
-                target="_blank"
+              <a
+                href="https://summer-camp-44ba3.web.app/"
                 className="text-gradient  ">
                 <span>Live</span>
-              </Link>
+              </a>
 
-              <Link
-                to="https://github.com/programming-hero-web-course1/b712-summer-camp-client-side-Arzenaakter"
-                target="_blank"
+              <a
+                href="https://github.com/programming-hero-web-course1/b712-summer-camp-client-side-Arzenaakter"
                 className="text-gradient  flex items-center gap-2">
                 <AiOutlineGithub size="24px" color="#e0176b" />
                 <span>Client</span>
-              </Link>
+              </a>
 
-              <Link
-                to="https://github.com/programming-hero-web-course1/b7a12-summer-camp-server_side-Arzenaakter"
-                target="_blank"
+              <a
+                href="https://github.com/programming-hero-web-course1/b7a12-summer-camp-server_side-Arzenaakter"
                 className="text-gradient  flex items-center gap-2">
                 <AiOutlineGithub size="24px" color="#e0176b" />
                 <span>Server</span>
-              </Link>
+              </a>
             </div>
           </div>
         </motion.div>
@@ -113,9 +110,9 @@ const Projects = () => {
           <div className="relative max-w-full lg:h-full h-52 lg:w-[44%] overflow-hidden ">
             <div className=" w-full transition-transform duration-[5000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] ">
               <img
-                src="https://i.ibb.co/34QLWCQ/troytove.png"
+                src="https://i.ibb.co/34QLWCQ/troyhrefve.png"
                 alt=""
-                className="w-full object-cover object-top"
+                className="w-full object-cover object-hrefp"
               />
             </div>
           </div>
@@ -124,19 +121,19 @@ const Projects = () => {
             <div>
               <p className="">
                 {" "}
-                <span className="text-gradient text-3xl">TroyTove</span>
+                <span className="text-gradient text-3xl">Troyhrefve</span>
               </p>
               <p className="">
                 <span className="text-gradient text-lg">Features: </span> <br />{" "}
                 <span className="text-[12px] font-thin space-y-2">
                   <li>
-                    The website about toys is called ToyTrove, which means a
-                    collection of toys.
+                    The website about hrefys is called hrefyTrove, which means a
+                    collection of hrefys.
                   </li>
-                  <li>Users can add, update and delete toys.</li>
+                  <li>Users can add, update and delete hrefys.</li>
                   <li>
                     Implemented Firebase Auth for secure user authentication and
-                    MongoDB for efficient data storage.
+                    MongoDB for efficient data shrefrage.
                   </li>
                 </span>
               </p>
@@ -151,28 +148,23 @@ const Projects = () => {
               </p>
             </div>
             <div className="flex  gap-4 items-center text-xl">
-              <Link
-                to="https://toytrove.web.app/"
-                target="_blank"
-                className="text-gradient  ">
+              <a href="https://hrefytrove.web.app/" className="text-gradient  ">
                 <span>Live</span>
-              </Link>
+              </a>
 
-              <Link
-                to="https://github.com/programming-hero-web-course-4/b7a11-toy-marketplace-client-side-Arzenaakter"
-                target="_blank"
+              <a
+                href="https://github.com/programming-hero-web-course-4/b7a11-hrefy-marketplace-client-side-Arzenaakter"
                 className="text-gradient  flex items-center gap-2">
                 <AiOutlineGithub size="24px" color="#e0176b" />
                 <span>Client</span>
-              </Link>
+              </a>
 
-              <Link
-                to="https://github.com/programming-hero-web-course-4/b7a11-toy-marketplace-server-side-Arzenaakter"
-                target="_blank"
+              <a
+                href="https://github.com/programming-hero-web-course-4/b7a11-hrefy-marketplace-server-side-Arzenaakter"
                 className="text-gradient  flex items-center gap-2">
                 <AiOutlineGithub size="24px" color="#e0176b" />
                 <span>Server</span>
-              </Link>
+              </a>
             </div>
           </div>
         </motion.div>
@@ -192,7 +184,7 @@ const Projects = () => {
               <img
                 src="https://i.ibb.co/Ms9Lxsd/food.png"
                 alt=""
-                className="w-full object-cover object-top"
+                className="w-full object-cover object-hrefp"
               />
             </div>
           </div>
@@ -211,7 +203,7 @@ const Projects = () => {
                   </li>
                   <li>
                     Implemented Firebase Auth for secure user authentication and
-                    MongoDB for efficient data storage.
+                    MongoDB for efficient data shrefrage.
                   </li>
                   <li>
                     Users can see details about chefs if he/she logged in.
@@ -228,28 +220,25 @@ const Projects = () => {
               </p>
             </div>
             <div className="flex  gap-4 items-center text-xl">
-              <Link
-                to="https://foodie-franzy.web.app/"
-                target="_blank"
+              <a
+                href="https://foodie-franzy.web.app/"
                 className="text-gradient  ">
                 <span>Live</span>
-              </Link>
+              </a>
 
-              <Link
-                to="https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-client-side-Arzenaakter"
-                target="_blank"
+              <a
+                href="https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-client-side-Arzenaakter"
                 className="text-gradient  flex items-center gap-2">
                 <AiOutlineGithub size="24px" color="#e0176b" />
                 <span>Client</span>
-              </Link>
+              </a>
 
-              <Link
-                to="https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-server-side-Arzenaakter"
-                target="_blank"
+              <a
+                href="https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-server-side-Arzenaakter"
                 className="text-gradient  flex items-center gap-2">
                 <AiOutlineGithub size="24px" color="#e0176b" />
                 <span>Server</span>
-              </Link>
+              </a>
             </div>
           </div>
         </motion.div>

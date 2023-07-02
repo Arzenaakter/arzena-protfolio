@@ -1,42 +1,62 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const menuLink = (
     <>
       <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? "active" : "")}
-          to="/">
+        <Link
+          to="banner"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={4000}>
           Home
-        </NavLink>
+        </Link>
       </li>
       <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? "active" : "")}
-          to="/about">
+        <Link
+          to="about"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={4000}>
           About
-        </NavLink>
+        </Link>
       </li>
       <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? "active" : "")}
-          to="/skill">
+        <Link
+          to="skill"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={4000}>
           Skills
-        </NavLink>
+        </Link>
       </li>
       <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? "active" : "")}
-          to="/project">
+        <Link
+          to="project"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-130}
+          duration={4000}>
           Projects
-        </NavLink>
+        </Link>
       </li>
       <li>
-        <NavLink
-          className={({ isActive }) => (isActive ? "active" : "")}
-          to="/contact">
+        <Link
+          to="contact"
+          activeClass="active"
+          spy={true}
+          smooth={true}
+          offset={-90}
+          duration={4000}>
           Contact
-        </NavLink>
+        </Link>
       </li>
     </>
   );
@@ -63,7 +83,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
+              className="menu menu-sm  dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
               {menuLink}
             </ul>
           </div>

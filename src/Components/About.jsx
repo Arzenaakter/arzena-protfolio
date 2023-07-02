@@ -37,7 +37,11 @@ const About = () => {
             solutions. I am detail-oriented, committed to meeting deadlines, and
             strive for excellence in my work.
           </p>
-
+          {/* <a
+            href="https://drive.google.com/file/d/1OAHeh_D9-thBYcTqQDriaXy5FjUint-j/view?usp=sharing"
+            className="border-gradient  p-2 w-48 flex gap-3 btn-hover items-center">
+            View Resume <BsArrowUpRight size="24px" />
+          </a> */}
           <Link
             to="https://drive.google.com/file/d/1OAHeh_D9-thBYcTqQDriaXy5FjUint-j/view?usp=sharing"
             target="_blank"
@@ -58,20 +62,18 @@ const About = () => {
             <AiOutlinePhone size="24px" color="#e0176b" />
             <span>+8801766179470</span>
           </p>
-          <Link
-            to="https://www.linkedin.com/in/arzena-akter-b43a47169/"
-            target="_blank"
+          <a
+            href="https://www.linkedin.com/in/arzena-akter-b43a47169/"
             className="flex gap-3 items-center ">
             <AiOutlineLinkedin size="24px" color="#e0176b" />
             <span>LinkedIn</span>
-          </Link>
-          <Link
-            to="https://github.com/Arzenaakter"
-            target="_blank"
+          </a>
+          <a
+            href="https://github.com/Arzenaakter"
             className="flex gap-3 items-center  ">
             <AiOutlineGithub size="24px" color="#e0176b" />
             <span>Github</span>
-          </Link>
+          </a>
         </motion.div>
       </div>
     </div>
