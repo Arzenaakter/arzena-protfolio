@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 const Banner = () => {
   return (
     <>
-      <div className=" w-full mx-auto   ">
+      <div className=" w-full mx-auto" id="banner">
         <div className="grid grid-cols-1 lg:grid-cols-2  px-10 lg:px-0">
           <div className="mt-28  relative z-10 w-80 lg:ms-36  flex justify-center items-center mb-28 lg:mb-0 avatar ">
             <motion.div
@@ -14,8 +14,12 @@ const Banner = () => {
               whileHover={{
                 scale: 1.2,
               }}
-              animate={{ opacity: 1, scale: 1.1, boxShadow: "0 0 8px #e0176b" }}
-              transition={{ delay: 0.5, duration: 1 }}>
+              whileInView={{
+                opacity: 1,
+                scale: 1.1,
+                boxShadow: "0 0 8px #e0176b",
+              }}
+              transition={{ delay: 0.5, duration: 1.5 }}>
               <img
                 src="https://i.ibb.co/NmtT9vw/305428727-821003419104941-8938889378099885696-n.jpg"
                 alt=""
@@ -26,8 +30,8 @@ const Banner = () => {
           <motion.div
             className="mt-28   space-y-3"
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1, scale: 0.9 }}
-            transition={{ delay: 0.6, duration: 1 }}>
+            whileInView={{ opacity: 1, scale: 0.9 }}
+            transition={{ duration: 1.5 }}>
             <p className="text-[14px] font-thin">Hi, I am</p>
             <h1 className="text-3xl  ">Arzena AKter</h1>
             <TypeAnimation

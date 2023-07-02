@@ -6,20 +6,18 @@ import Navbar from "../../Components/Navbar";
 import Projects from "../../Components/Projects";
 import Skills from "../../Components/Skills";
 
-
 const Home = () => {
-    return (
-        <div className="container mx-auto">
-            <Navbar></Navbar>
-            <Banner></Banner>
-            <About></About>
-            <Skills></Skills>
-            <Projects></Projects>
-            <Contact></Contact>
-            <Footer></Footer>
-            
-        </div>
-    );
+  return (
+    <div className="container mx-auto">
+      <Navbar></Navbar>
+      <Banner></Banner>
+      <About></About>
+      <Skills></Skills>
+      <Projects></Projects>
+      <Contact></Contact>
+      <Footer></Footer>
+    </div>
+  );
 };
 
 export default Home;

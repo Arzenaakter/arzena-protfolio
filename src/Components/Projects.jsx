@@ -1,13 +1,28 @@
 import { AiOutlineGithub } from "react-icons/ai";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div className="mt-20 px-10 lg:px-0 ">
+    <div className="mt-20 px-10 lg:px-0 " id="project">
       <h1 className="title ">Projects</h1>
+      <motion.hr
+        className="  border-gradient"
+        initial={{ width: 0 }}
+        whileInView={{ width: "100%" }}
+        transition={{ delay: 1, duration: 1.5 }}
+      />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 overflow-hidden relative">
         {/* card1 */}
-        <div className="border-gradient ">
+        <motion.div
+          className="border-gradient "
+          initial={{ x: "-100%" }}
+          whileInView={{ x: "0" }}
+          whileHover={{
+            scale: 0.9,
+            boxShadow: "0 0 8px #e0176b",
+          }}
+          transition={{ duration: 1 }}>
           <div className="relative max-w-full h-72 overflow-hidden ">
             <div className="h-max w-full transition-transform duration-[5000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] ">
               <img
@@ -59,10 +74,20 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
         {/*card end  */}
         {/* card 2 */}
-        <div className="border-gradient ">
+        <motion.div
+          className="border-gradient "
+          initial={{ opacity: 0 }}
+          whileHover={{
+            scale: 0.9,
+            boxShadow: "0 0 8px #e0176b",
+          }}
+          whileInView={{
+            opacity: 1,
+          }}
+          transition={{ delay: 1, duration: 1 }}>
           <div className="relative max-w-full h-72 overflow-hidden ">
             <div className="h-max w-full transition-transform duration-[5000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] ">
               <img
@@ -113,10 +138,18 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
         {/*card end  */}
         {/* card 3 */}
-        <div className="border-gradient ">
+        <motion.div
+          className="border-gradient "
+          initial={{ x: "100%" }}
+          whileInView={{ x: "0" }}
+          whileHover={{
+            scale: 0.9,
+            boxShadow: "0 0 8px #e0176b",
+          }}
+          transition={{ duration: 1 }}>
           <div className="relative max-w-full h-72 overflow-hidden ">
             <div className="h-max w-full transition-transform duration-[5000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] ">
               <img
@@ -167,7 +200,7 @@ const Projects = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </motion.div>
         {/*card end  */}
       </div>
     </div>

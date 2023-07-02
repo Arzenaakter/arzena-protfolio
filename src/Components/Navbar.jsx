@@ -1,31 +1,49 @@
-
-
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const menuLink = (
     <>
       <li>
-        <a>Home</a>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "")}
+          to="/">
+          Home
+        </NavLink>
       </li>
       <li>
-        <a>About</a>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "")}
+          to="/about">
+          About
+        </NavLink>
       </li>
       <li>
-        <a>Skills</a>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "")}
+          to="/skill">
+          Skills
+        </NavLink>
       </li>
       <li>
-        <a>Projects</a>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "")}
+          to="/project">
+          Projects
+        </NavLink>
       </li>
       <li>
-        <a>Contact</a>
+        <NavLink
+          className={({ isActive }) => (isActive ? "active" : "")}
+          to="/contact">
+          Contact
+        </NavLink>
       </li>
     </>
   );
 
   return (
     <>
-      <header className=" navbar fixed container rounded-full px-5 mx-auto z-10  bg-opacity-30 bg-black ">
+      <header className=" navbar fixed container rounded-full px-5 mx-auto z-10   bg-black ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -49,8 +67,11 @@ const Navbar = () => {
               {menuLink}
             </ul>
           </div>
-          <Link to="/" >
-          <span className="  lg:text-4xl text-xl logo text-gradient font-bold">  Arzena Akter</span>
+          <Link to="/">
+            <span className="  lg:text-4xl text-xl logo text-gradient font-bold">
+              {" "}
+              Arzena Akter
+            </span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

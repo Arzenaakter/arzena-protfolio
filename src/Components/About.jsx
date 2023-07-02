@@ -5,21 +5,26 @@ import {
   AiOutlineGithub,
 } from "react-icons/ai";
 import { BsArrowUpRight } from "react-icons/bs";
-
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-AOS.init();
-
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+
 const About = () => {
   return (
-    <div className="mt-20 px-10 lg:px-0">
+    <div className="mt-20 px-10 lg:px-0" id="about">
       <h1 className="title ">About Me</h1>
+      <motion.hr
+        className="  border-gradient"
+        initial={{ width: 0 }}
+        whileInView={{ width: "100%" }}
+        transition={{ duration: 1.5 }}
+      />
+
       <div className="lg:flex gap-10 mt-8">
-        <div
+        <motion.div
           className="lg:w-[60%] space-y-5 lg:mb-0 mb-10"
-          data-aos="fade-right">
+          initial={{ x: "-100%" }}
+          whileInView={{ x: "0" }}
+          transition={{ duration: 1.5 }}>
           <p className="text-[13px] font-thin text-justify">
             I am <span className=" text-xl ">Arzena Akter</span>, from Bogura,
             Bangladesh. I completed my BSc in Computer Science and Engineering
@@ -32,14 +37,19 @@ const About = () => {
             solutions. I am detail-oriented, committed to meeting deadlines, and
             strive for excellence in my work.
           </p>
+
           <Link
             to="https://drive.google.com/file/d/1OAHeh_D9-thBYcTqQDriaXy5FjUint-j/view?usp=sharing"
             target="_blank"
             className="border-gradient  p-2 w-48 flex gap-3 btn-hover items-center">
             View Resume <BsArrowUpRight size="24px" />
           </Link>
-        </div>
-        <div className="space-y-4" data-aos="fade-left">
+        </motion.div>
+        <motion.div
+          className="space-y-4"
+          initial={{ x: "100%" }}
+          whileInView={{ x: "0" }}
+          transition={{ duration: 1.5 }}>
           <p className="flex gap-3 items-center ">
             <AiOutlineMail size="24px" color="#e0176b" />
             <span>arzenaakter@gmail.com</span>
@@ -62,7 +72,7 @@ const About = () => {
             <AiOutlineGithub size="24px" color="#e0176b" />
             <span>Github</span>
           </Link>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

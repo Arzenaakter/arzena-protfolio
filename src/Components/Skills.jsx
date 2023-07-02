@@ -1,15 +1,20 @@
 import { motion } from "framer-motion";
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use <link> for styles
-// ..
-AOS.init();
+
 const Skills = () => {
   return (
-    <div className="mt-20 px-10 lg:px-0">
+    <div className="mt-20 px-10 lg:px-0" id="skill">
       <h1 className="title ">Skills</h1>
-      <div
+      <motion.hr
+        className="  border-gradient"
+        initial={{ width: 0 }}
+        whileInView={{ width: "100%" }}
+        transition={{ duration: 1.5 }}
+      />
+      <motion.div
         className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-10 gap-5"
-        data-aos="zoom-in-right">
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1, scale: 0.9 }}
+        transition={{ duration: 1.5 }}>
         <motion.div
           className="flex border-gradient items-center justify-center py-2"
           animate={{ textShadow: " 0px 0px 3px rgb(255,255,255)" }}
@@ -17,7 +22,7 @@ const Skills = () => {
             boxShadow: " 0px 0px 8px rgb(255,255,255",
             textShadow: " 0px 0px 8px rgb(255,255,255",
           }}
-          transition={{ duration: 1 }}>
+          transition={{ duration: 1.5 }}>
           <p>HTML</p>
         </motion.div>
         <motion.div
@@ -180,7 +185,7 @@ const Skills = () => {
           transition={{ duration: 1 }}>
           <p>Vercel</p>
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 };

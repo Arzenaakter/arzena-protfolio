@@ -18,9 +18,18 @@ body {
   border-radius: 0%;
   font-weight: bold;
 }
+.active {
+  background: -webkit-radial-gradient(#e0176b, #051570);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(45deg, purple, orange) 1;
+  border-radius: 0%;
+  font-weight: bold;
+}
 
 .text-gradient {
-  background: -webkit-radial-gradient(#e0176b, #051570);
+  background: -webkit-radial-gradient(purple, #e0176b, orange);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -28,16 +37,16 @@ body {
   font-family: "Sacramento", cursive;
 }
 .border-gradient {
-  border: 2px solid;
-  border-image: linear-gradient(45deg, #e0176b, #051570) 1;
+  border: 1px solid;
+  border-image: linear-gradient(45deg, purple, #e0176b, orange) 1;
 }
 .title {
-  background: -webkit-radial-gradient(#e0176b, #051570);
+  background: -webkit-radial-gradient(purple, #e0176b, orange);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  border-bottom: 2px solid;
+  /* border-bottom: 2px solid;
   border-image: linear-gradient(45deg, purple, orange) 1;
-  border-radius: 0%;
+  border-radius: 0%; */
   font-size: 28px;
   font-weight: bold;
 }
