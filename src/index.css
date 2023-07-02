@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Poppins:wght@200;300;400;600;800&family=Sacramento&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Poppins:wght@200;300;400;600;800&family=Sacramento&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,8 +10,8 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .menu li a:hover {
-    background: -webkit-radial-gradient(#e0176b, #051570);
-     background-clip: text;
+  background: -webkit-radial-gradient(#e0176b, #051570);
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: 1px solid;
   border-image: linear-gradient(45deg, purple, orange) 1;
@@ -19,45 +19,37 @@ body {
   font-weight: bold;
 }
 
-.text-gradient{
-    background: -webkit-radial-gradient(#e0176b, #051570);
-     background-clip: text;
+.text-gradient {
+  background: -webkit-radial-gradient(#e0176b, #051570);
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.logo{
-    font-family: 'Sacramento', cursive;
-    
+.logo {
+  font-family: "Sacramento", cursive;
 }
-.border-gradient{
- border: 2px solid;
- border-image: linear-gradient(45deg, #e0176b, #051570) 1;
-
+.border-gradient {
+  border: 2px solid;
+  border-image: linear-gradient(45deg, #e0176b, #051570) 1;
 }
-.title{
-    background: -webkit-radial-gradient(#e0176b, #051570);
-     background-clip: text;
+.title {
+  background: -webkit-radial-gradient(#e0176b, #051570);
+  background-clip: text;
   -webkit-text-fill-color: transparent;
- border-bottom: 2px solid;
- border-image: linear-gradient(45deg, purple, orange) 1;
- border-radius: 0%;
- font-size: 28px;
- font-weight: bold;
-
+  border-bottom: 2px solid;
+  border-image: linear-gradient(45deg, purple, orange) 1;
+  border-radius: 0%;
+  font-size: 28px;
+  font-weight: bold;
 }
-.btn-hover:hover{
-    color: #ece6e6;
- 
-background: linear-gradient(45deg, #e0176b, #051570);
-border: none;
-padding: 10px;
-border-radius: 10px;
+.btn-hover:hover {
+  color: #ece6e6;
 
-
+  background: linear-gradient(45deg, #e0176b, #051570);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
 }
-.border-card{
-    border-top: 2px solid;
-    border-image: linear-gradient(45deg, #e0176b, #051570) 1;
-
+.border-card {
+  border-top: 2px solid;
+  border-image: linear-gradient(45deg, #e0176b, #051570) 1;
 }
-
-

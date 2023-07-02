@@ -50,10 +50,7 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" >
-          <span className="  text-4xl logo text-gradient font-bold"
-           
-          
-          >  Arzena Akter</span>
+          <span className="  lg:text-4xl text-xl logo text-gradient font-bold">  Arzena Akter</span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">

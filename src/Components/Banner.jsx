@@ -1,4 +1,4 @@
-import { FaDownload } from 'react-icons/fa';
+import { FaDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 
@@ -6,33 +6,32 @@ const Banner = () => {
   return (
     <>
       <div className=" w-full mx-auto   ">
-        <div className="flex justify-between mx-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2  px-10 lg:px-0">
+          <div className="mt-28  relative z-10 w-80 lg:ms-36  flex justify-center items-center mb-28 lg:mb-0 avatar ">
+            <motion.div
+              className="rounded-full lg:w-64 w-52 absolute  mt-48 lg:mt-0 "
+              initial={{ opacity: 0 }}
+              whileHover={{
+                scale: 1.2,
+              }}
+              animate={{ opacity: 1, scale: 1.1, boxShadow: "0 0 8px #e0176b" }}
+              transition={{ delay: 0.5, duration: 1 }}>
+              <img
+                src="https://i.ibb.co/NmtT9vw/305428727-821003419104941-8938889378099885696-n.jpg"
+                alt=""
+                className="   "
+              />
+            </motion.div>
+          </div>
           <motion.div
-            className="mt-28 w-[30%] h-72 relative z-10  bg-opacity-30 bg-black rounded-lg"
+            className="mt-28   space-y-3"
             initial={{ opacity: 0 }}
-            whileHover={{
-              scale: 1.2,
-              
-            }}
-            animate={{ opacity: 1, scale: 1.1 }}
-            transition={{ delay: 0.5, duration: 1 }}>
-            <img
-              src="https://i.ibb.co/Hgj595C/20221211-125110-removebg-preview.png"
-              alt=""
-              className=" -mt-[88px]  rounded-md absolute "
-            />
-          </motion.div>
-          <motion.div className="mt-28  w-[65%] space-y-3"
-           initial={{ opacity: 0 }}
-         
-           animate={{ opacity: 1,scale: 0.9 }}
-           transition={{ delay: 0.6, duration: 1 }}
-          
-          >
-          
+            animate={{ opacity: 1, scale: 0.9 }}
+            transition={{ delay: 0.6, duration: 1 }}>
             <p className="text-[14px] font-thin">Hi, I am</p>
             <h1 className="text-3xl  ">Arzena AKter</h1>
-            <TypeAnimation className='text-gradient mt-2'
+            <TypeAnimation
+              className="text-gradient mt-2"
               sequence={[
                 // Same substring at the start will only be typed once, initially
                 "I'm a Web Developer",
@@ -56,7 +55,11 @@ const Banner = () => {
               technology stack, enhancing proficiency in front-end, back-end,
               database management, and API integration.{" "}
             </p>
-            <a href='/public/Resume-Arzena.pdf' className="border-gradient  p-2 w-52 flex gap-3 btn-hover">Download Resume <FaDownload/></a>
+            <a
+              href="/public/Resume-Arzena.pdf"
+              className="border-gradient  p-2 w-52 flex gap-3 btn-hover">
+              Download Resume <FaDownload />
+            </a>
           </motion.div>
         </div>
       </div>
