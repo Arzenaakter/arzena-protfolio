@@ -42,7 +42,7 @@ const Navbar = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-130}
+          offset={-100}
           duration={4000}>
           Projects
         </Link>
@@ -53,7 +53,7 @@ const Navbar = () => {
           activeClass="active"
           spy={true}
           smooth={true}
-          offset={-90}
+          offset={-100}
           duration={4000}>
           Contact
         </Link>

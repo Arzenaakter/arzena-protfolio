@@ -1,6 +1,7 @@
 import { FaDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+import pdf from "../../src/assets/Resume-Arzena.pdf";
 
 const Banner = () => {
   return (
@@ -60,7 +61,7 @@ const Banner = () => {
               database management, and API integration.{" "}
             </p>
             <a
-              href="/src/assets/Resume-Arzena.pdf"
+              href={pdf}
               className="border-gradient  p-2 w-52 flex gap-3 btn-hover">
               Download Resume <FaDownload />
             </a>
