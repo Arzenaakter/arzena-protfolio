@@ -22,7 +22,7 @@ const Navbar = () => {
           smooth={true}
           offset={-100}
           duration={4000}>
-          About Me
+          About
         </Link>
       </li>
       <li>
@@ -83,7 +83,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm  dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52">
+              className="menu menu-sm  dropdown-content mt-3 z-10 p-2 shadow bg-black rounded-box w-52">
               {menuLink}
             </ul>
           </div>
