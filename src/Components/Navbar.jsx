@@ -22,7 +22,7 @@ const Navbar = () => {
           smooth={true}
           offset={-100}
           duration={4000}>
-          About
+          About Me
         </Link>
       </li>
       <li>

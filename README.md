@@ -1,1 +1,1 @@
-- Live Link: https://64a1d8cd0103a810de499177--quiet-licorice-c8b1ff.netlify.app/
+- Live Link: https://quiet-licorice-c8b1ff.netlify.app/

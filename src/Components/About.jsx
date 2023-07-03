@@ -37,11 +37,7 @@ const About = () => {
             solutions. I am detail-oriented, committed to meeting deadlines, and
             strive for excellence in my work.
           </p>
-          {/* <a
-            href="https://drive.google.com/file/d/1OAHeh_D9-thBYcTqQDriaXy5FjUint-j/view?usp=sharing"
-            className="border-gradient  p-2 w-48 flex gap-3 btn-hover items-center">
-            View Resume <BsArrowUpRight size="24px" />
-          </a> */}
+
           <Link
             to="https://drive.google.com/file/d/1OAHeh_D9-thBYcTqQDriaXy5FjUint-j/view?usp=sharing"
             target="_blank"
