@@ -1,6 +1,7 @@
 import { AiOutlineGithub } from "react-icons/ai";
 // import { a } from "react-router-dom";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -72,25 +73,28 @@ const Projects = () => {
               </p>
             </div>
             <div className="flex  gap-4 items-center text-xl">
-              <a
-                href="https://summer-camp-44ba3.web.app/"
+              <Link
+                to="https://summer-camp-44ba3.web.app/"
+                target="_blank"
                 className="text-gradient  ">
                 <span>Live</span>
-              </a>
+              </Link>
 
-              <a
-                href="https://github.com/programming-hero-web-course1/b712-summer-camp-client-side-Arzenaakter"
+              <Link
+                to="https://github.com/Arzenaakter/sketchventure-client-site"
+                target="_blank"
                 className="text-gradient  flex items-center gap-2">
                 <AiOutlineGithub size="24px" color="#e0176b" />
                 <span>Client</span>
-              </a>
+              </Link>
 
-              <a
-                href="https://github.com/programming-hero-web-course1/b7a12-summer-camp-server_side-Arzenaakter"
+              <Link
+                to="https://github.com/Arzenaakter/sketchventure-server-site"
+                target="_blank"
                 className="text-gradient  flex items-center gap-2">
                 <AiOutlineGithub size="24px" color="#e0176b" />
                 <span>Server</span>
-              </a>
+              </Link>
             </div>
           </div>
         </motion.div>
@@ -110,7 +114,7 @@ const Projects = () => {
           <div className="relative max-w-full lg:h-full h-52 lg:w-[44%] overflow-hidden ">
             <div className=" w-full transition-transform duration-[5000ms] ease-linear transform translate-y-0 hover:-translate-y-[calc(100%-18rem)] ">
               <img
-                src="https://i.ibb.co/34QLWCQ/troyhrefve.png"
+                src="https://i.ibb.co/HzgVT3J/troytove.png"
                 alt=""
                 className="w-full object-cover object-hrefp"
               />
@@ -121,19 +125,19 @@ const Projects = () => {
             <div>
               <p className="">
                 {" "}
-                <span className="text-gradient text-3xl">Troyhrefve</span>
+                <span className="text-gradient text-3xl">TroyTrove</span>
               </p>
               <p className="">
                 <span className="text-gradient text-lg">Features: </span> <br />{" "}
                 <span className="text-[12px] font-thin space-y-2">
                   <li>
-                    The website about hrefys is called hrefyTrove, which means a
-                    collection of hrefys.
+                    The website about toys is called TroyTrove, which means a
+                    collection of toys..
                   </li>
-                  <li>Users can add, update and delete hrefys.</li>
+                  <li>Users can add, update and delete toys.</li>
                   <li>
                     Implemented Firebase Auth for secure user authentication and
-                    MongoDB for efficient data shrefrage.
+                    MongoDB for efficient data storage..
                   </li>
                 </span>
               </p>
@@ -148,23 +152,28 @@ const Projects = () => {
               </p>
             </div>
             <div className="flex  gap-4 items-center text-xl">
-              <a href="https://hrefytrove.web.app/" className="text-gradient  ">
+              <Link
+                to="https://toytrove.web.app/"
+                target="_blank"
+                className="text-gradient  ">
                 <span>Live</span>
-              </a>
+              </Link>
 
-              <a
-                href="https://github.com/programming-hero-web-course-4/b7a11-hrefy-marketplace-client-side-Arzenaakter"
+              <Link
+                to="https://github.com/Arzenaakter/ToyTrove-Client-site"
+                target="_blank"
                 className="text-gradient  flex items-center gap-2">
                 <AiOutlineGithub size="24px" color="#e0176b" />
                 <span>Client</span>
-              </a>
+              </Link>
 
-              <a
-                href="https://github.com/programming-hero-web-course-4/b7a11-hrefy-marketplace-server-side-Arzenaakter"
+              <Link
+                to="https://github.com/Arzenaakter/ToyTrove-Server-site"
+                target="_blank"
                 className="text-gradient  flex items-center gap-2">
                 <AiOutlineGithub size="24px" color="#e0176b" />
                 <span>Server</span>
-              </a>
+              </Link>
             </div>
           </div>
         </motion.div>
@@ -203,7 +212,7 @@ const Projects = () => {
                   </li>
                   <li>
                     Implemented Firebase Auth for secure user authentication and
-                    MongoDB for efficient data shrefrage.
+                    MongoDB for efficient data storage.
                   </li>
                   <li>
                     Users can see details about chefs if he/she logged in.
@@ -220,25 +229,28 @@ const Projects = () => {
               </p>
             </div>
             <div className="flex  gap-4 items-center text-xl">
-              <a
-                href="https://foodie-franzy.web.app/"
+              <Link
+                to="https://foodie-franzy.web.app/"
+                target="_blank"
                 className="text-gradient  ">
                 <span>Live</span>
-              </a>
+              </Link>
 
-              <a
-                href="https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-client-side-Arzenaakter"
+              <Link
+                to="https://github.com/Arzenaakter/Foodie-Franzy-Client-site"
+                target="_blank"
                 className="text-gradient  flex items-center gap-2">
                 <AiOutlineGithub size="24px" color="#e0176b" />
                 <span>Client</span>
-              </a>
+              </Link>
 
-              <a
-                href="https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-server-side-Arzenaakter"
+              <Link
+                to="https://github.com/Arzenaakter/Foodie-Franzy-Server_site"
+                target="_blank"
                 className="text-gradient  flex items-center gap-2">
                 <AiOutlineGithub size="24px" color="#e0176b" />
                 <span>Server</span>
-              </a>
+              </Link>
             </div>
           </div>
         </motion.div>
