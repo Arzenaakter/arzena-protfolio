@@ -10,26 +10,28 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .menu li a:hover {
-  background: -webkit-radial-gradient(#e0176b, #051570);
+  background: -webkit-radial-gradient(#433bff, #433bff);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   border-bottom: 1px solid;
-  border-image: linear-gradient(45deg, purple, orange) 1;
+  border-image: linear-gradient(45deg, #433bff, #090911) 1;
   border-radius: 0%;
   font-weight: bold;
 }
 .active {
-  background: -webkit-radial-gradient(#e0176b, #051570);
+  /* background: -webkit-radial-gradient(#433bff, #090911); */
+  background: #433bff;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-text-fill-color: transparent; */
   border-bottom: 1px solid;
-  border-image: linear-gradient(45deg, purple, orange) 1;
+  border-image: linear-gradient(45deg, #433bff, #090911) 1;
   border-radius: 0%;
   font-weight: bold;
 }
 
 .text-gradient {
-  background: -webkit-radial-gradient(purple, #e0176b, orange);
+  background: #433bff;
+  /* background: -webkit-radial-gradient(#433bff, #090911); */
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -38,10 +40,12 @@ body {
 }
 .border-gradient {
   border: 1px solid;
-  border-image: linear-gradient(45deg, purple, #e0176b, orange) 1;
+  border-image: linear-gradient(45deg, #433bff, #090911) 1;
+  border-radius: 2%;
 }
 .title {
-  background: -webkit-radial-gradient(purple, #e0176b, orange);
+  /* background: -webkit-radial-gradient(#433bff, #090911); */
+  background: #433bff;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   /* border-bottom: 2px solid;
@@ -52,13 +56,19 @@ body {
 }
 .btn-hover:hover {
   color: #ece6e6;
-
-  background: linear-gradient(45deg, #e0176b, #051570);
-  border: none;
-  padding: 10px;
+  background: #090911;
+  border: 1px solid;
+  border-image: linear-gradient(45deg, #433bff, #090911) 1;
   border-radius: 10px;
 }
 /* .border-card {
   border-top: 2px solid;
   border-image: linear-gradient(45deg, #e0176b, #051570) 1;
 } */
+.primary-text {
+  /* background-color: #090911; */
+  color: #e3d8d2;
+}
+.secondary-text {
+  color: #cec5c3;
+}
